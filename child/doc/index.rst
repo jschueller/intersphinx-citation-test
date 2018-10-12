@@ -19,6 +19,8 @@ API
   :members:
   :inherited-members:
 
+The link to :py:class:`parent.Foo` is ok though.
+
 Indices and tables
 ==================
 
