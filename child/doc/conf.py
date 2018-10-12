@@ -15,11 +15,11 @@
 import os
 import sys
 sys.path.insert(0, os.path.abspath('../'))
-
+sys.path.insert(0, os.path.abspath('../../parent'))
 
 # -- Project information -----------------------------------------------------
 
-project = u'parent'
+project = u'child'
 copyright = u'2018, jsr'
 author = u'jsr'
 
@@ -41,6 +41,9 @@ release = u'0'
 extensions = [
     'sphinx.ext.autodoc', 'sphinx.ext.autosummary'
 ]
+
+extensions.append('sphinx.ext.intersphinx')
+#intersphinx_mapping = {'python': ('http://foo.github.io/', 'foo-objects.txt')}
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
